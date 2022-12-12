@@ -10,3 +10,5 @@ services:
             - "guac_data:/config"
         ports:
             - "9800:8080"
+volumes:
+    guac_data:
