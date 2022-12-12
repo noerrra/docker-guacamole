@@ -3,11 +3,10 @@ services:
     guacamole:
         image: abesnier/guacamole
         restart: always
-        container_name: guacamoletest
+        container_name: guacamole_noerr
         environment:
-            - TZ=Europe/Paris
+            - TZ=America/New_York
         volumes:
-            - "/my/guacamole/config:/config"
+            - "./config:/config"
         ports:
-            - "8080:8080"
-
+            - "9800:8080"
