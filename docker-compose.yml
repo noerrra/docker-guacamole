@@ -7,6 +7,6 @@ services:
         environment:
             - TZ=America/New_York
         volumes:
-            - "./config:/config"
+            - "guac_data/config:/config"
         ports:
             - "9800:8080"
